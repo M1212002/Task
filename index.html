@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Task</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Customer and Transaction Data</h1>
+        
+        <div class="mb-3">
+            <input type="text" id="searchCustomerName" class="form-control" placeholder="Filter by Customer Name">
+        </div>
+        <div class="mb-3">
+            <input type="number" id="searchTransactionAmount" class="form-control" placeholder="Filter by Transaction Amount">
+        </div>
+        
+        <table class="table table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th>Customer ID</th>
+                    <th>Customer Name</th>
+                    <th>Transaction ID</th>
+                    <th>Transaction Date</th>
+                    <th>Transaction Amount</th>
+                    <th>Show Line Graph</th>
+                    <th>Show Bar Graph</th>
+                    <th>Hide Graph</th>
+                </tr>
+            </thead>
+            <tbody id="customerTransactionTable">
+            </tbody>
+        </table>
+
+        <h2 class="mt-5 mb-4">Total Transaction Amount Chart</h2>
+        <canvas id="transactionChart"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

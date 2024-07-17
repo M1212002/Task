@@ -1,0 +1,12 @@
+tr:hover {
+    cursor: pointer;
+    background-color: #f1f1f1;
+}
+.btn-transparent {
+    background-color: transparent;
+    border: none;
+    color: black;
+}
+.btn-transparent:hover {
+    color: #007bff;
+}
